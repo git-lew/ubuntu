@@ -1,4 +1,6 @@
 # Conduro Ubuntu 20.04
+This is an experimental fork of Conduro. This is not guaranteed to work
+
 Linux is well-known for being one of the most secure operating systems available. But that doesn't mean you can count on it to be as secure as possible right out of the box. Conduro (_Hardening in Latin_) will automate this process to ensure your platform is secure.
 
 > ⚠ We recommend to not execute this script on servers with existing firewall configurations.
