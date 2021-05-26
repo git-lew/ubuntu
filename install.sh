@@ -59,11 +59,11 @@ function _cmd {
 clear
 
 # print logo + information
-printf "${YELLOW}
+printf "${BLUE}
   ▄▄·        ▐ ▄ ·▄▄▄▄  ▄• ▄▌▄▄▄        
  ▐█ ▌▪▪     •█▌▐███▪ ██ █▪██▌▀▄ █·▪     
  ██ ▄▄ ▄█▀▄ ▐█▐▐▌▐█· ▐█▌█▌▐█▌▐▀▀▄  ▄█▀▄ 
- ▐███▌▐█▌.▐▌██▐█▌██. ██ ▐█▄█▌▐█•█▌▐█▌.▐▌
+ ▐███▌▐█▌.▐▌██▐█▌██. ██ ▐█▄█▌▐█•█▌▐█▌.▐▌ v2.Lew
  ·▀▀▀  ▀█▄▀▪▀▀ █▪▀▀▀▀▀•  ▀▀▀ .▀  ▀ ▀█▄▀▪
  ${LBLACK}Hardening ${YELLOW}Ubuntu 20.04 ${LBLACK}https://condu.ro
  
@@ -110,8 +110,10 @@ _task "update ntp servers"
     _cmd 'echo "FallbackNTP=ntp.ubuntu.com" | sudo tee -a /etc/systemd/timesyncd.conf'
 
 # description
-_task "update sysctl.conf"
-    _cmd 'wget --timeout=5 --tries=2 --quiet -c https://raw.githubusercontent.com/conduro/ubuntu/main/sysctl.conf -O /etc/sysctl.conf'
+#_task "update sysctl.conf"
+#   _cmd 'wget --timeout=5 --tries=2 --quiet -c https://raw.githubusercontent.com/conduro/ubuntu/main/sysctl.conf -O /etc/sysctl.conf'
+
+##Crashes Conduro. Run network hardening in separate script
 
 # description
 _task "update sshd_config"
