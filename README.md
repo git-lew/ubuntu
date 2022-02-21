@@ -166,16 +166,6 @@ Subsystem sftp  /usr/lib/openssh/sftp-server
 ```
 
 
-#### disable system logging
-```bash
-systemctl stop systemd-journald.service
-systemctl disable systemd-journald.service
-systemctl mask systemd-journald.service
-
-systemctl stop rsyslog.service
-systemctl disable rsyslog.service
-systemctl mask rsyslog.service
-```
 
 
 #### configure firewall
